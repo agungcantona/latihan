@@ -1,0 +1,362 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+
+@font-face{
+	font-family: "Miracle Day";
+	src : url(font/Miracle Day.ttf);
+}
+
+.header{
+	height: 80px;
+	background-color: black;
+	display: flex;
+}
+
+.bars{
+		display: none;
+}
+
+.logo{
+	display: flex;
+	color: red;
+	flex-flow: row;
+	margin-right: auto;
+	font-size: 34px;
+	align-items: center;
+	margin-left: 60px;
+}
+
+.logo h2{
+	font-family: "Miracle Day"
+}
+
+.menu{
+	display: flex;
+	margin-right: 10%;
+}
+
+.menu ul{
+	display: flex;
+	flex-flow: row-reverse;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.menu li{
+	list-style-type: none;
+	margin:0 15px;
+}
+
+.menu a{
+	text-decoration:none;
+	margin: 0 8px;
+	color: white;
+}
+
+
+.hero-image{
+	background-image: url(image/capture.JPG);
+	background-repeat: no-repeat;
+	background-position: all;
+	position: relative;
+	background-size: cover;
+	height: 640px;
+}
+
+.hero-text {
+	color: white;
+  	text-align: left;
+  	position: absolute;
+  	top: 50%;
+  	left: 40%;
+  	transform: translate(-50%, -50%);
+}
+
+.hero-text button {
+  background-color: transparent; 
+  color: white; 
+  border: 2px solid white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.section-2{
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+
+.page{
+	margin: 80px 140px;
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+	text-align: left;
+}
+
+.page h2{
+	color: red;
+}
+
+.page p{
+ font-family: sans-serif;
+ margin-bottom: 60px;
+}
+
+.page button{
+  background-color: white; 
+  color: red; 
+  border: 2px solid red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;	
+}
+.section-3{
+	display: flex;
+	flex-flow: row;
+}
+
+
+.column-1{
+	background-color: silver;
+	padding: 50px 50px;
+}
+
+.column-1 h3{
+	color: red;
+	text-decoration: none;
+	margin-left: 50px;
+}
+
+.column-1 img{
+	height:200px; 
+	width:400px;
+	position: relative;
+	margin-left: 50px;
+}
+
+.column-1 p{
+	text-align: justify; 
+	text-decoration: none;
+	margin: 40px 100px 0 50px;
+}
+
+.column-2{
+	background-color: #D3D3D3;
+	padding: 50px 50px;
+}
+
+.column-2 img{
+	height:200px; 
+	width:400px;
+	position: relative;
+	margin-left: 50px;
+}
+
+.column-2 h3{
+	margin-left: 50px;
+	color: red;
+	text-decoration: none;
+
+}
+
+.column-2 p{
+	text-align: justify; 
+	text-decoration: none;
+	margin: 40px 100px 0 50px;
+}
+
+.section-4{
+	display: flex;
+	flex-flow: row;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.column{
+	background-color: white;
+	padding: 50px;
+}
+
+.column h3{
+	color: red;
+	margin-bottom: 0;
+}
+
+.column img{
+	width: 60px;
+	height: 60px;
+	opacity: 0.8;
+}
+
+.column button{
+  background-color: white; 
+  color: red; 
+  border: 2px solid red;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0;
+  cursor: pointer;	
+}
+
+.footer{
+	background-color: crimson;
+}
+
+.footer h2{
+	color: white;
+}
+
+.footer small{
+	margin: 10px 80px;
+	color: white;
+	opacity: 0.5;
+}
+
+.form{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	margin: 0 80px;
+}
+
+.form table{
+	width: 100%;
+	text-align: left;
+}
+
+.form label{
+	color: white;
+}
+
+input[type=text]{
+	width: 80%;
+	height: 40px;
+	background-color: transparent;
+	border: 2px solid silver;
+	margin:10px 0 ;
+}
+
+input[type=email]{
+	width: 80%;
+	height: 40px;
+	background-color: transparent;
+	border: 2px solid silver;
+	margin:10px 0 ;
+}
+
+input[type=submit]{
+  background-color: transparent; 
+  color: white; 
+  border: 2px solid white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+textarea{
+	background-color: transparent;
+	width: 180%;
+	height: 250px;
+	border: 2px solid silver;
+	margin:10px 0 ;
+}
+
+
+@media only screen and (max-width: 714px) {
+	.header{
+		width: auto;
+	}
+
+	.logo{
+		margin-left: 30px;
+	}
+
+	.menu ul li{
+		display: none;
+	}
+
+	.bars{
+		float: right;
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 714px) {
+
+	.section-3{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.column-1{
+	background-color: silver;
+	padding: 50px 50px;
+	width: auto;
+	}
+
+	.column-1 h3{
+	color: red;
+	text-decoration: none;
+	margin-left: 10px;
+	}
+
+	.column-1 img{
+	height:200px; 
+	width:400px;
+	position: relative;
+	margin-left: 10px;
+	}
+
+	.column-1 p{
+	text-align: justify; 
+	text-decoration: none;
+	margin: 40px 80px 0 0;
+	}
+
+	.column-2 h3{
+	color: red;
+	text-decoration: none;
+	margin-left: 10px;
+	}
+
+	.column-2 img{
+	height:200px; 
+	width:400px;
+	position: relative;
+	margin-left: 10px;
+	}
+
+	.column-2 p{
+	text-align: justify; 
+	text-decoration: none;
+	margin: 40px 80px 0 0;
+	}
+}
+
+	@media only screen and (max-width: 714px) {
+	.section-4{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
